@@ -119,18 +119,12 @@
 
 # 7번 2480
 
-""" 
-수정필요
-"""
 a, b, c = map(int, input().split())
 
 if a==b==c:
     total = 10000+a*1000
     print(total)
-elif a==b:
-    total = 1000+a*100
-    print(total)
-elif a==c:
+elif a==b or a==c:
     total = 1000+a*100
     print(total)
 elif b==c:
